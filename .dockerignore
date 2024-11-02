@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+.ipynb_checkpoints
+
+# Ignore les dossiers de configuration des environnements virtuels
+venv/
+env/
+.virtualenv/
+.venv/
+
+# Ignore les fichiers de configuration personnels et sensibles
+*.env
+.DS_Store
+
+# Ignore les dossiers de logs et temporaires
+logs/
+*.log
+tmp/
+*.tmp
+*.bak
+
+# Ignore les fichiers et dossiers spécifiques à Git
+.git
+.gitignore
