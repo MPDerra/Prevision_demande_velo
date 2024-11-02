@@ -8,14 +8,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Chemin vers le modèle et l'encodeur
-path = "C:/Users/pasca/OneDrive/Bureau/Deploiement/DemandeVelos/"
+#path = "DemandeVelos/"
 
 # Chargement du modèle, de l'encodeur et des données d'entraînement
-with open(path + "modeles/model_predict_velos.pkl", "rb") as f:
+with open("modeles/model_predict_velos.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Charger les données d'entraînement
-df_data = pd.read_csv(path + "data/hour.csv")  # Remplacez par le vrai fichier de données
+df_data = pd.read_csv("data/hour.csv")  # Remplacez par le vrai fichier de données
 
 # Configuration de l'application Streamlit avec des onglets
 tab1, tab2, tab3 = st.tabs(["Prédiction de la demande", "Données observées", "À propos"])
